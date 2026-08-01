@@ -1,0 +1,51 @@
+--- !tapi-tbd
+tbd-version:           4
+targets:               [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/SpotlightUIShared.framework/SpotlightUIShared
+current-version:       181.4.6
+compatibility-version: 1
+exports:
+  - targets:              [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+    symbols:              [ _SUISGeneralLog, _SUISLogSubsystem,
+                            _SUISPasteboardIndexingLog,
+                            _SpotlightContactIdentifierKey,
+                            _SpotlightContactUserActivityType,
+                            _SpotlightPreferredBundleIDsKey,
+                            _SpotlightUISharedVersionNumber,
+                            _SpotlightUISharedVersionString ]
+    objc-classes:         [ SUIAppIntentsAnnotator, SUIAppIntentsQueryHelper,
+                            SUIQueryContextBuilder,
+                            SUISFileURLPasteboardExtractor,
+                            SUISImageOrPDFPasteboardExtractor,
+                            SUISPasteboardExtractor, SUISPasteboardManager,
+                            SUISRadarUtilities, SUISStringPasteboardExtractor,
+                            SUISWebURLPasteboardExtractor,
+                            SUISpotlightController, SUIUpdateSearchQueryCommand,
+                            SUIUtilities,
+                            _TtC17SpotlightUIShared14BaseTTRManager,
+                            _TtC17SpotlightUIShared16AddFilterCommand,
+                            _TtC17SpotlightUIShared22FilesZKWFallbackResult,
+                            _TtC17SpotlightUIShared24SpotlightQueryDataSource,
+                            _TtC17SpotlightUIShared27ParameterSuggestionsManager,
+                            _TtC17SpotlightUIShared29SpotlightIndexQueryDataSource,
+                            _TtC17SpotlightUIShared32LocationParameterQueryDataSource,
+                            _TtC17SpotlightUIShared32SUIPerformAppBrowseFilterCommand,
+                            _TtC17SpotlightUIShared34PrimitiveTypedValueResultViewModel,
+                            _TtC17SpotlightUIShared36PrimitiveTypedValueResultHostingView ]
+    objc-ivars:           [ SUISPasteboardManager._changeCount,
+                            SUISPasteboardManager._foundItems,
+                            SUISPasteboardManager._isNothingDispatchedForNextExpiration,
+                            SUISPasteboardManager._pasteboardHistoryItemWasCopied,
+                            SUISPasteboardManager._publisher,
+                            SUISPasteboardManager._scheduler,
+                            SUISPasteboardManager._sink,
+                            SUISPasteboardManager._stream,
+                            SUISpotlightController._appDelegate,
+                            SUISpotlightController._clientSession,
+                            SUISpotlightController._currentSearchString,
+                            SUISpotlightController._feedbackDelegate,
+                            SUISpotlightController._resultsViewDelegate,
+                            SUISpotlightController._searchFieldDelegate,
+                            SUIUpdateSearchQueryCommand._queryKind ]
+...

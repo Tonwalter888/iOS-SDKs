@@ -1,0 +1,16 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+install-name:    '/System/Library/Frameworks/TouchController.framework/TouchController'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+    symbols:         [ _CGPointFromJSONDictionary, _CGSizeFromJSONDictionary, _JSONDictionaryFromCGPoint, 
+                       _JSONDictionaryFromCGSize, _TCGameControllerProductCategoryTouchController, 
+                       _getTCLogger, _tc_isInternalBuild ]
+    objc-classes:    [ TCButton, TCButtonDescriptor, TCButtonQuad, TCCircleCollider, 
+                       TCControlContents, TCControlImage, TCControlLabel, TCDirectionPad, 
+                       TCDirectionPadDescriptor, TCRectCollider, TCRegionCollider, 
+                       TCSwitch, TCSwitchDescriptor, TCThrottle, TCThrottleDescriptor, 
+                       TCThumbstick, TCThumbstickDescriptor, TCTouchController, TCTouchControllerDescriptor, 
+                       TCTouchpad, TCTouchpadDescriptor ]
+...

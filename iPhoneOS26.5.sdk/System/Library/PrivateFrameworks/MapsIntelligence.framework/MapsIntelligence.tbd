@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:           4
+targets:               [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/MapsIntelligence.framework/MapsIntelligence
+current-version:       1
+compatibility-version: 1
+exports:
+  - targets:              [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+    symbols:              [ _GEOConfigMapsIntelligenceTMPSignalInjection,
+                            _GEOConfigMapsIntelligenceTMPSignalPList,
+                            _MapsIntelligenceConfig_NoopKey,
+                            _MapsIntelligenceVersionNumber,
+                            _MapsIntelligenceVersionString ]
+    objc-classes:         [ _TtC16MapsIntelligence27MapsIntelligenceBaseManager,
+                            _TtC16MapsIntelligence33MapsIntelligenceSearchRankManager,
+                            _TtC16MapsIntelligence46MapsIntelligenceTransportModePredictionManager ]
+...

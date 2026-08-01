@@ -1,0 +1,35 @@
+--- !tapi-tbd
+tbd-version:           4
+targets:               [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/ProximityReaderCore.framework/ProximityReaderCore
+current-version:       1
+compatibility-version: 1
+exports:
+  - targets:              [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+    symbols:              [ _ProximityReaderCoreVersionNumber,
+                            _ProximityReaderCoreVersionString ]
+    objc-classes:         [ _TtC19ProximityReaderCore10ReadResult,
+                            _TtC19ProximityReaderCore11AccountAuth,
+                            _TtC19ProximityReaderCore12VASReadEntry,
+                            _TtC19ProximityReaderCore13SessionResult,
+                            _TtC19ProximityReaderCore16PINConfiguration,
+                            _TtC19ProximityReaderCore18StoreErrorInternal,
+                            _TtC19ProximityReaderCore19IdentityInformation,
+                            _TtC19ProximityReaderCore19LayoutBundleDetails,
+                            _TtC19ProximityReaderCore19TransactionInternal,
+                            _TtC19ProximityReaderCore19VASMerchantInternal,
+                            _TtC19ProximityReaderCore21VASResultArrayWrapper,
+                            _TtC19ProximityReaderCore22SessionRequestInternal,
+                            _TtC19ProximityReaderCore23CardReaderErrorInternal,
+                            _TtC19ProximityReaderCore29IdentityConfigurationInternal,
+                            _TtC19ProximityReaderCore29StoreAndForwardStatusInternal,
+                            _TtC19ProximityReaderCore33StoreAndForwardReadResultInternal,
+                            _TtC19ProximityReaderCore34StoreAndForwardBatchHeaderInternal,
+                            _TtC19ProximityReaderCore39MobileDriversLicenseDataRequestInternal,
+                            _TtC19ProximityReaderCore39MobileDriversLicenseViewOptionsInternal,
+                            _TtC19ProximityReaderCore39MobileDriversLicenseViewRequestInternal,
+                            _TtC19ProximityReaderCore40MobileDriversLicenseDataResponseInternal,
+                            _TtC19ProximityReaderCore40MobileDriversLicenseViewResponseInternal,
+                            _TtC19ProximityReaderCore7PINData ]
+...

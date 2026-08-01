@@ -1,0 +1,11 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+install-name:    '/System/Library/Frameworks/MapKit.framework/MapKitSwiftBridge.framework/MapKitSwiftBridge'
+swift-abi-version: 7
+exports:
+  - targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+    symbols:         [ '_$sSo6UIViewC17MapKitSwiftBridgeE18setGlassBackgroundyyF', 
+                       '_$sSo6UIViewC17MapKitSwiftBridgeE20clearGlassBackgroundyyF', 
+                       _MapKitSwiftBridgeVersionNumber, _MapKitSwiftBridgeVersionString ]
+...

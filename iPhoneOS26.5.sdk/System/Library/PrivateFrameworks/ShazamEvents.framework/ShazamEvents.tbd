@@ -1,0 +1,23 @@
+--- !tapi-tbd
+tbd-version:           4
+targets:               [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/ShazamEvents.framework/ShazamEvents
+current-version:       1
+compatibility-version: 1
+exports:
+  - targets:              [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+    symbols:              [ _SHShazamEventsClientInterface,
+                            _SHShazamEventsServiceInterface ]
+    objc-classes:         [ SHShazamEventsServiceInterfaces,
+                            _TtC12ShazamEvents19ShazamEventsService,
+                            _TtC12ShazamEvents22EventXPCValueContainer,
+                            _TtC12ShazamEvents22GeoXPCRequestContainer,
+                            _TtC12ShazamEvents24VersionXPCValueContainer,
+                            _TtC12ShazamEvents29PartialEventXPCValueContainer,
+                            _TtC12ShazamEvents30GroupScheduleXPCValueContainer,
+                            _TtC12ShazamEvents30VenueScheduleXPCValueContainer,
+                            _TtC12ShazamEvents32QueryDescriptorXPCValueContainer,
+                            _TtC12ShazamEvents36ParticipantScheduleXPCValueContainer,
+                            _TtC12ShazamEvents38GeoRegionDescriptorXPCRequestContainer ]
+...

@@ -1,0 +1,38 @@
+--- !tapi-tbd
+tbd-version:           4
+targets:               [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/ShellSceneKit.framework/ShellSceneKit
+current-version:       14.0.1
+compatibility-version: 0
+exports:
+  - targets:              [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+    symbols:              [ _SSKDisplayPriorityHighest,
+                            _SSKDisplayPriorityInvalid,
+                            _SSKDisplayPriorityLowest ]
+    objc-classes:         [ SSKDefaultDisplayTransformer,
+                            SSKDisplayArrangementItem, SSKDisplayProfile,
+                            SSKDisplayProfileRegistry,
+                            _TtC13ShellSceneKit14CADisplayQueue,
+                            _TtC13ShellSceneKit14DisplayBlanker,
+                            _TtC13ShellSceneKit14SceneWorkspace,
+                            _TtC13ShellSceneKit17FBSHardwareSource,
+                            _TtC13ShellSceneKit17ProfileActivation,
+                            _TtC13ShellSceneKit19SceneLevelExtension,
+                            _TtC13ShellSceneKit23TransformSceneExtension,
+                            _TtC13ShellSceneKit27RootScenePresentationBinder,
+                            _TtC13ShellSceneKit30BacklightSupportSceneExtension,
+                            _TtC13ShellSceneKit31ProfileActivationSceneExtension,
+                            _TtCC13ShellSceneKit19SceneLevelExtension13HostComponent,
+                            _TtCC13ShellSceneKit23TransformSceneExtension13HostComponent,
+                            _TtCC13ShellSceneKit23TransformSceneExtension17SettingsExtension,
+                            _TtCC13ShellSceneKit30BacklightSupportSceneExtension13HostComponent,
+                            _TtCC13ShellSceneKit30BacklightSupportSceneExtension15ClientComponent,
+                            _TtCC13ShellSceneKit30BacklightSupportSceneExtension17SettingsExtension,
+                            _TtCC13ShellSceneKit31ProfileActivationSceneExtension13HostComponent,
+                            _TtCC13ShellSceneKit31ProfileActivationSceneExtension15ClientComponent,
+                            _TtCC13ShellSceneKit31ProfileActivationSceneExtension17SettingsExtension ]
+    objc-ivars:           [ SSKDisplayArrangementItem._edge,
+                            SSKDisplayArrangementItem._offset,
+                            SSKDisplayArrangementItem._relativeDisplayIdentity ]
+...

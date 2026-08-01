@@ -1,0 +1,68 @@
+--- !tapi-tbd
+tbd-version:           4
+targets:               [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/CompanionSetupKit.framework/CompanionSetupKit
+current-version:       0
+compatibility-version: 0
+exports:
+  - targets:              [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+    symbols:              [ _CSKMobileGestaltAssistantCapability,
+                            _CSKMobileGestaltRemoteBluetoothAddress ]
+    objc-classes:         [ AnalysisEngine, CSKDeviceIdentity,
+                            HPdetector_SceneClassifier_B238,
+                            HPdetector_SceneClassifier_B238Input,
+                            HPdetector_SceneClassifier_B238Output,
+                            HPdetector_SceneClassifier_B520,
+                            HPdetector_SceneClassifier_B520Input,
+                            HPdetector_SceneClassifier_B520Output, Interpolator,
+                            Matcher, MotionDetector, Recognizer,
+                            _TtC17CompanionSetupKit12CSKOSUpdater,
+                            _TtC17CompanionSetupKit14CSKXMLDocument,
+                            _TtC17CompanionSetupKit25CSKRemoteUIViewController,
+                            _TtC17CompanionSetupKit25CSKSetupHostingController,
+                            _TtC17CompanionSetupKit25CSKStepHomeKitSetupClient,
+                            _TtC17CompanionSetupKit25CSKStepVisualConfirmation,
+                            _TtC17CompanionSetupKit33CSKAccountRepairHostingController ]
+    objc-ivars:           [ AnalysisEngine._crop_fraction,
+                            AnalysisEngine._currentFrameTime,
+                            AnalysisEngine._dispatchQueue,
+                            AnalysisEngine._fid_avg,
+                            AnalysisEngine._isDetectingMotion,
+                            AnalysisEngine._motion,
+                            AnalysisEngine._processingFrame,
+                            AnalysisEngine._processingQueue,
+                            AnalysisEngine._recognitionExpirationSeconds,
+                            AnalysisEngine._recognizer,
+                            AnalysisEngine._recognizerInterval,
+                            AnalysisEngine._recognizingCompletionHandlerBlock,
+                            AnalysisEngine._useRecognizer,
+                            AnalysisEngine._usingM7Motion,
+                            HPdetector_SceneClassifier_B238._model,
+                            HPdetector_SceneClassifier_B238Input._imageDescriptors,
+                            HPdetector_SceneClassifier_B238Output._HomePodDetected,
+                            HPdetector_SceneClassifier_B520._model,
+                            HPdetector_SceneClassifier_B520Input._imageDescriptors,
+                            HPdetector_SceneClassifier_B520Output._HomePodDetected,
+                            Interpolator._interpolatedLength,
+                            Interpolator._interpolatedTimes,
+                            Interpolator._interpolatedValues,
+                            Matcher._correlation, Matcher._correlation2MaxLength,
+                            Matcher._correlationLength, Matcher._kernel,
+                            Matcher._kernelLength, Matcher._matchError,
+                            Matcher._matchIndex, Matcher._matchStrength,
+                            Matcher._matched, Matcher._normalizedSignal,
+                            Matcher._sampleThreshold, Matcher._signalCorrLength,
+                            Matcher._signalOffset, Matcher._std_floor,
+                            Matcher._strengthThreshold,
+                            MotionDetector._accelerationMagnitude,
+                            MotionDetector._accelerationThreshold,
+                            MotionDetector._motion,
+                            MotionDetector._rotationMagnitude,
+                            MotionDetector._rotationThreshold,
+                            Recognizer._classifier, Recognizer._confidence,
+                            Recognizer._cropRect,
+                            Recognizer._detectionOutputIsDouble,
+                            Recognizer._lastProcessedImageTime,
+                            Recognizer._recognitionTime, Recognizer._threshold ]
+...

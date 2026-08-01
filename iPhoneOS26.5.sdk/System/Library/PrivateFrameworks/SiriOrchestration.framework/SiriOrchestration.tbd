@@ -1,0 +1,15 @@
+--- !tapi-tbd
+tbd-version:           4
+targets:               [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/SiriOrchestration.framework/SiriOrchestration
+current-version:       1
+compatibility-version: 1
+exports:
+  - targets:              [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+    symbols:              [ _SiriOrchestrationVersionNumber,
+                            _SiriOrchestrationVersionString ]
+    objc-classes:         [ MulticastMessageForwarder, Receiver ]
+    objc-ivars:           [ MulticastMessageForwarder._receivers,
+                            Receiver._wrappedObject ]
+...

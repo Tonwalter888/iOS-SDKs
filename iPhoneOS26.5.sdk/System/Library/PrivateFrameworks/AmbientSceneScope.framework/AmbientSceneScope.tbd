@@ -1,0 +1,27 @@
+--- !tapi-tbd
+tbd-version:           4
+targets:               [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/AmbientSceneScope.framework/AmbientSceneScope
+current-version:       1.23
+compatibility-version: 1.23
+exports:
+  - targets:              [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+    symbols:              [ _AmbientSceneFrameBundleCreate,
+                            _AmbientSceneFrameBundleCreateWithSceneTypesAndConfidences,
+                            _AmbientSceneFrameBundleRelease,
+                            _AmbientSceneFusionResultCreateIndoorOutdoorOutputs,
+                            _AmbientSceneFusionResultCreateSceneTypesAndConfidencesArrays,
+                            _AmbientSceneFusionResultGetCount,
+                            _AmbientSceneFusionResultRelease,
+                            _AmbientSceneSessionAddObservation,
+                            _AmbientSceneSessionConfigCreate,
+                            _AmbientSceneSessionConfigRelease,
+                            _AmbientSceneSessionCreate,
+                            _AmbientSceneSessionCreateFusionResult,
+                            _AmbientSceneSessionCreateWithConfig,
+                            _AmbientSceneSessionGetIndoorOutdoorDynamicParams,
+                            _AmbientSceneSessionGetScenesDynamicParams,
+                            _AmbientSceneSessionRelease,
+                            _AmbientSceneSessionRetain ]
+...

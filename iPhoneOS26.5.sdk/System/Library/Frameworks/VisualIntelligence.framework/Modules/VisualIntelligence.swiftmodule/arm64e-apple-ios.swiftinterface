@@ -1,0 +1,50 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.3.2 (swiftlang-6.3.2.1.2 clang-2100.0.123.2)
+// swift-module-flags: -target arm64e-apple-ios26.5 -enable-objc-interop -enable-library-evolution -swift-version 6 -enforce-exclusivity=checked -O -library-level api -enable-experimental-feature DebugDescriptionMacro -user-module-version 114.13 -module-name VisualIntelligence -package-name com.apple.VisualIntelligence
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.2
+import AppIntents
+import CoreVideo
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@available(iOS 26.0, *)
+extension VisualIntelligence.SemanticContentDescriptor : AppIntents._SystemIntentValue {
+  public static var persistentIdentifier: Swift.String {
+    get
+  }
+  public static var defaultResolverSpecification: some AppIntents.ResolverSpecification {
+    get
+  }
+  public static var typeDisplayRepresentation: AppIntents.TypeDisplayRepresentation {
+    get
+  }
+  public var displayRepresentation: AppIntents.DisplayRepresentation {
+    get
+  }
+  @available(iOS 26.0, *)
+  public typealias Specification = @_opaqueReturnTypeOf("$s18VisualIntelligence25SemanticContentDescriptorV28defaultResolverSpecificationQrvpZ", 0) __
+  @available(iOS 26.0, *)
+  public typealias UnwrappedType = VisualIntelligence.SemanticContentDescriptor
+  @available(iOS 26.0, *)
+  public typealias ValueType = VisualIntelligence.SemanticContentDescriptor
+}
+@available(iOS 26.0, *)
+public struct SemanticContentDescriptor : Swift.Sendable {
+  public let labels: [Swift.String]
+  public var pixelBuffer: CoreVideo.CVReadOnlyPixelBuffer? {
+    get
+  }
+}
+@available(iOS 26.0, *)
+extension VisualIntelligence.SemanticContentDescriptor : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@available(iOS 26.0, *)
+extension VisualIntelligence.SemanticContentDescriptor : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}

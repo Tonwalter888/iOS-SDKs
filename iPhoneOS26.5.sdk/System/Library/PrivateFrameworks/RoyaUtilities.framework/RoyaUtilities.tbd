@@ -1,0 +1,38 @@
+--- !tapi-tbd
+tbd-version:           4
+targets:               [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/RoyaUtilities.framework/RoyaUtilities
+current-version:       1
+compatibility-version: 1
+exports:
+  - targets:              [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+    symbols:              [ _NSDataDeallocatorMalloc, _NSDataDeallocatorNone,
+                            _NSDictionaryToStringSorted,
+                            _RoyaUtilitiesVersionNumber,
+                            _RoyaUtilitiesVersionString,
+                            __ZN4roya14disp_make_attrEbb11qos_class_ti32dispatch_autorelease_frequency_t,
+                            __ZNK4roya19CVPlaneInfoWithData7copy_toERKS0_,
+                            __ZNK4roya25CVPixelBufferInfoWithData7copy_toERKS0_,
+                            _kIOSurfaceCreationProperties, _roya_os_log_instance ]
+    objc-classes:         [ CVPixelBufferInfo,
+                            CVPixelBufferInfoWithCVPixelBuffer,
+                            CVPixelBufferInfoWithIOSurface, NSBoolAutoCondition,
+                            NSDataWithIOSurface, NSIntAutoCondition,
+                            NSMutableDataNoCopy, NSMutableDataWithIOSurface ]
+    objc-ivars:           [ CVPixelBufferInfo._info,
+                            CVPixelBufferInfoWithCVPixelBuffer._buffer,
+                            CVPixelBufferInfoWithCVPixelBuffer._data,
+                            CVPixelBufferInfoWithIOSurface._buffer,
+                            CVPixelBufferInfoWithIOSurface._data,
+                            NSBoolAutoCondition._signaled,
+                            NSDataWithIOSurface._cvbuffer,
+                            NSDataWithIOSurface._iosurface,
+                            NSIntAutoCondition._initialStatus,
+                            NSIntAutoCondition._status,
+                            NSMutableDataNoCopy._capacity,
+                            NSMutableDataNoCopy._deallocator,
+                            NSMutableDataNoCopy._length,
+                            NSMutableDataNoCopy._mutableBytes,
+                            NSMutableDataWithIOSurface._iosurface ]
+...

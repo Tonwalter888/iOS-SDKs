@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+install-name:    '/System/Library/Frameworks/AudioToolbox.framework/libAudioDSP.dylib'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+    symbols:         [ _ABHelperCreateDescriptionFromASBD, _ABHelperCreateDescriptionFromAudioUnit, 
+                       _ABHelperCreateDescriptionFromDSPGraph, _ABHelperCreateDescriptionFromDSPGraphBox, 
+                       _ABHelperIsABTestModeOn, _ABHelperWriteJSONFileFromDescription, 
+                       _DNNVAD_CreateInstance, _DNNVAD_CreateInstanceWithVersion, 
+                       _DNNVAD_DestroyInstance, _DNNVAD_EnableLegacyVAD, _DNNVAD_GetPowerMeterValue, 
+                       _DNNVAD_GetSoundActivityValue, _DNNVAD_GetSpeechProbabilityHardValue, 
+                       _DNNVAD_GetSpeechProbabilitySoftValue, _DNNVAD_Initialize, 
+                       _DNNVAD_IsInitialized, _DNNVAD_Process, _DNNVAD_Uninitialize, 
+                       _GetAudioDSPManager, _RegisterAUVoiceIsolation_Unsearchable, 
+                       _RegisterAudioUnits_Analyzer, _RegisterAudioUnits_Internal, 
+                       _RegisterAudioUnits_InternalUnsearchable, _RegisterMovieRemixAUs_Unsearchable, 
+                       _RegisterPublicAudioUnits, _gSpatialMetadataSPI ]
+...

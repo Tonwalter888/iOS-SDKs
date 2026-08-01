@@ -1,0 +1,70 @@
+--- !tapi-tbd
+tbd-version:           4
+targets:               [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/CompanionCamera.framework/CompanionCamera
+current-version:       1
+compatibility-version: 1
+exports:
+  - targets:              [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+    symbols:              [ _ViewfinderErrorReportKey,
+                            _ViewfinderErrorReporterDidReportErrorNotification,
+                            __ccCaptureDeviceFromNCCaptureDevice,
+                            __ccCaptureModeFromNCCaptureMode,
+                            __ccFlashModeFromNCFlashMode,
+                            __ccHDRModeFromNCHDRMode, __ccIrisModeFromNCIrisMode,
+                            __ccSharedLibraryModeFromNCSharedLibraryMode,
+                            __ncCaptureDeviceFromCCCaptureDevice,
+                            __ncCaptureModeFromCCCaptureMode,
+                            __ncFlashModeFromCCFlashMode,
+                            __ncFlashSupportFromCCFlashSupport,
+                            __ncHDRModeFromCCHDRMode,
+                            __ncHDRSupportFromCCHDRSupport,
+                            __ncIrisModeFromCCIrisMode,
+                            __ncIrisSupportFromCCIrisSupport,
+                            __ncOrientationFromDeviceOrientation,
+                            __ncShallowDepthOfFieldStatusFromCCShallowDepthOfFieldStatus,
+                            __ncSharedLibraryModeFromCCSharedLibraryMode,
+                            __ncSharedLibrarySupportFromCCSharedLibrarySupport,
+                            __ncStereoCaptureStatusFromCCStereoCaptureStatus,
+                            _nanocamera_log_app, _nanocamera_log_control,
+                            _nanocamera_log_preview ]
+    objc-classes:         [ CCCameraConnection, CCCameraConnectionInternal,
+                            CCCameraConnectionReliabilityMonitor,
+                            ViewfinderErrorReport, ViewfinderErrorReporter,
+                            ViewfinderReliability ]
+    objc-ivars:           [ CCCameraConnection._burstInProgress,
+                            CCCameraConnection._capturePauseDate,
+                            CCCameraConnection._captureStartDate,
+                            CCCameraConnection._capturing,
+                            CCCameraConnection._capturingPaused,
+                            CCCameraConnection._currentPreviewState,
+                            CCCameraConnection._delegate,
+                            CCCameraConnection._desiredPreviewState,
+                            CCCameraConnection._deviceConnectedNotificationToken,
+                            CCCameraConnection._deviceDisconnectedNotificationToken,
+                            CCCameraConnection._internal,
+                            CCCameraConnection._interruptionCount,
+                            CCCameraConnection._lastSentZoomAmount,
+                            CCCameraConnection._orientationChangeObserver,
+                            CCCameraConnection._pendingZoomAmount,
+                            CCCameraConnection._previewEndpoint,
+                            CCCameraConnection._remoteViewfinder,
+                            CCCameraConnection._remoteViewfinderSession,
+                            CCCameraConnection._remoteViewfinderSessionState,
+                            CCCameraConnection._shallowDepthOfFieldStatus,
+                            CCCameraConnection._stereoCaptureStatus,
+                            CCCameraConnection._xpc,
+                            CCCameraConnection._zoomTimer,
+                            CCCameraConnectionInternal._parent,
+                            CCCameraConnectionReliabilityMonitor._instanceCount,
+                            CCCameraConnectionReliabilityMonitor._isConnected,
+                            CCCameraConnectionReliabilityMonitor._lastConnectTime,
+                            ViewfinderErrorReport._code,
+                            ViewfinderErrorReport._date,
+                            ViewfinderErrorReport._status,
+                            ViewfinderReliability._events,
+                            ViewfinderReliability._log,
+                            ViewfinderReliability._printSource,
+                            ViewfinderReliability._resetSource ]
+...

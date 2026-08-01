@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:           4
+targets:               [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/SiriDeviceSelection.framework/SiriDeviceSelection
+current-version:       1
+compatibility-version: 1
+exports:
+  - targets:              [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+    objc-classes:         [ DeviceSelectionActivation, DeviceSelectionRegistrar,
+                            DeviceSelectionRoutingServiceWakeStore,
+                            DeviceSelectionRoutingServiceWakeStoreInternal,
+                            DeviceSelectionSignalDonation,
+                            DeviceSelectionTriggerContext,
+                            DeviceSelectionTriggerSource ]
+    objc-ivars:           [ DeviceSelectionTriggerContext._isConnectedToCarPlay,
+                            DeviceSelectionTriggerContext._isSiriDisplayed,
+                            DeviceSelectionTriggerContext._isSiriSpeaking,
+                            DeviceSelectionTriggerSource._context,
+                            DeviceSelectionTriggerSource._type ]
+...

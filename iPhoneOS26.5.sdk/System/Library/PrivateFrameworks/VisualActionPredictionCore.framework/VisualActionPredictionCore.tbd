@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:           4
+targets:               [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/VisualActionPredictionCore.framework/VisualActionPredictionCore
+current-version:       627.13
+compatibility-version: 1
+exports:
+  - targets:              [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+    symbols:              [ _VisualActionPredictionCoreVersionNumber,
+                            _VisualActionPredictionCoreVersionString ]
+    objc-classes:         [ ATXVisualActionPredictionCoreBridge,
+                            ATXVisualActionPredictionCoreServer,
+                            _TtC26VisualActionPredictionCore17VisualActionEvent,
+                            _TtC26VisualActionPredictionCore20AppProtectionMonitor,
+                            _TtC26VisualActionPredictionCore20AppWorkspaceObserver ]
+    objc-ivars:           [ ATXVisualActionPredictionCoreBridge._server ]
+...

@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:           4
+targets:               [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/GenerativeAssistantUI.framework/GenerativeAssistantUI
+current-version:       1
+compatibility-version: 1
+exports:
+  - targets:              [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+    symbols:              [ _GenerativeAssistantUIVersionNumber,
+                            _GenerativeAssistantUIVersionString ]
+    objc-classes:         [ GenerativeAssistantSiriInvocationManager,
+                            _TtC16MarkdownDocument4Copy,
+                            _TtC16MarkdownDocument8CopyFile,
+                            _TtC16MarkdownDocument9CopyImage,
+                            _TtC16MarkdownDocument9SaveImage,
+                            _TtCV16MarkdownDocument17EmbeddedVideoView11Coordinator,
+                            _TtCV16MarkdownDocument20FileQuickLookPreview11Coordinator ]
+...

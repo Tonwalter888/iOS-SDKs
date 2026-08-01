@@ -1,0 +1,26 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+install-name:    '/usr/lib/libAONConnection.dylib'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+    symbols:         [ _aon_net_alloc_tx_buffer, _aon_net_connect_flow, _aon_net_connect_flow_with_connection_id, 
+                       _aon_net_connect_flow_with_telemetry_slot, _aon_net_dealloc_rx_buffer, 
+                       _aon_net_dealloc_tx_buffer, _aon_net_disconnect_flow, _aon_net_flow_metadata_get_tcp_metadata, 
+                       _aon_net_flow_metadata_get_tls_metadata, _aon_net_get_num_rx_buffers, 
+                       _aon_net_get_num_tx_buffers, _aon_net_get_ring_id_for_interface_type, 
+                       _aon_net_get_rx_buffer_size, _aon_net_get_tx_buffer_size, 
+                       _aon_net_get_tx_get_free_buffer_count, _aon_net_get_tx_ring_free_space, 
+                       _aon_net_metadata_get_flow_type, _aon_net_path_update, _aon_net_remove_flow, 
+                       _aon_net_rx_buffer_is_valid, _aon_net_rx_dequeue_buffer, _aon_net_rx_get_buffer_address, 
+                       _aon_net_rx_get_buffer_flow_id, _aon_net_rx_get_buffer_length, 
+                       _aon_net_rx_ring_sync, _aon_net_service_destroy, _aon_net_service_init, 
+                       _aon_net_set_tx_flow_id, _aon_net_set_tx_length, _aon_net_tcp_metadata_get_tcp_setup_time, 
+                       _aon_net_tls_metadata_get_alpn, _aon_net_tls_metadata_get_tls_setup_time, 
+                       _aon_net_tls_metadata_get_tls_version, _aon_net_tls_psk_data_get_negotiated_cipher, 
+                       _aon_net_tls_psk_data_get_psk, _aon_net_tls_psk_data_get_psk_id, 
+                       _aon_net_tls_psk_data_get_psk_id_len, _aon_net_tls_psk_data_get_psk_len, 
+                       _aon_net_tls_psk_data_get_psk_ticket_age_add, _aon_net_tls_psk_data_get_psk_ticket_lifetime, 
+                       _aon_net_tx_buffer_is_valid, _aon_net_tx_enqueue_buffer, _aon_net_tx_get_buffer_address, 
+                       _aon_net_tx_ring_sync ]
+...

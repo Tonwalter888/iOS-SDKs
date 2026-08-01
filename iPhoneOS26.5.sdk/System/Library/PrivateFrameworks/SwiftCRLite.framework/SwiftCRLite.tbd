@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:           4
+targets:               [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/SwiftCRLite.framework/SwiftCRLite
+current-version:       1
+compatibility-version: 1
+exports:
+  - targets:              [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+    symbols:              [ _SecCRLiteCertStatus, _SecCRLiteCopyCoverageInfo,
+                            _SecCRLiteCreate, _SecCRLiteDestroy,
+                            _SecCRLiteGetCoverageInfo, _SecCRLiteLoadFilter,
+                            _ValidDBObjcErrorDomain, _ValidDeflatedNTO1Data,
+                            _ValidInflatedNTO1Data, _kCRLiteErrorDomain ]
+    objc-classes:         [ ValidDBObjc, ValidDBStmt, _TtC11SwiftCRLite9SecCRLite ]
+    objc-ivars:           [ ValidDBObjc._db, ValidDBObjc._log, ValidDBStmt._db,
+                            ValidDBStmt._indexesByColumnName,
+                            ValidDBStmt._needReset, ValidDBStmt._stmt ]
+...

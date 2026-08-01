@@ -1,0 +1,6 @@
+framework module MapKitSwiftBridge {
+  umbrella header "MapKitSwiftBridge.h"
+  export *
+
+  module * { export * }
+}

@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:           4
+targets:               [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/AppleCIOFusionConfig.framework/AppleCIOFusionConfig
+current-version:       1
+compatibility-version: 1
+exports:
+  - targets:              [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+    symbols:              [ _ciofusionconfig_activate,
+                            _ciofusionconfig_free_ensemble_info,
+                            _ciofusionconfig_get_crypto_key,
+                            _ciofusionconfig_get_ensemble_info,
+                            _ciofusionconfig_reset,
+                            _ciofusionconfig_set_crypto_key,
+                            _ciofusionconfig_set_ensemble_info ]
+...

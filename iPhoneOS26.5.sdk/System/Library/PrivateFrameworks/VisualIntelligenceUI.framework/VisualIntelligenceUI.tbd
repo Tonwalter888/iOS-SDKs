@@ -1,0 +1,48 @@
+--- !tapi-tbd
+tbd-version:           4
+targets:               [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/VisualIntelligenceUI.framework/VisualIntelligenceUI
+current-version:       1
+compatibility-version: 1
+exports:
+  - targets:              [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+    symbols:              [ _VisualIntelligenceUIVersionNumber,
+                            _VisualIntelligenceUIVersionString,
+                            __Z32ParticleInit_wand_particleInit_0PKvjS0_jffRDv3_fRDv4_f,
+                            __Z33ParticleInit_wand_particleInit_40PKvjDv3_fRDv4_fRS1_,
+                            __Z36ParticleUpdate_wand_particleUpdate_1PKvjS0_Dv4_ffDv3_fS2_ffS0_ffRS1_,
+                            __Z37ParticleUpdate_wand_particleUpdate_28PKvjDv4_ffRS1_,
+                            __Z37ParticleUpdate_wand_particleUpdate_35PKvjDv4_fbbRS1_,
+                            __Z52Init_wand_graph_7EA008FB_5C48_4CE5_98F1_2F09F9A5CD68PKvjfR15vfx_float_range,
+                            __Z52Init_wand_graph_885370CA_9FEE_462C_9EC0_023D3C77D5FAPKvjffR15vfx_float_rangeS2_,
+                            __Z52Main_wand_graph_60FD312B_BD15_40F5_A712_1FAA290862F8PKvjRDv3_fR10simd_quatf,
+                            __Z52Main_wand_graph_72931B8F_2F95_4BB5_9FE6_1EB0C3BAC773PKvjDv2_fDv3_fS2_fbbxfbRS2_RfRbRxS4_S4_,
+                            __Z52Main_wand_graph_871F2BCC_D47F_4C4B_A756_367C9E3B1F1FPKvjRDv3_fS2_,
+                            __Z52Main_wand_graph_F66D2FC7_9DFA_45F7_BDD1_184FB5A9E179PKvjbS0_,
+                            __Z53Spawn_wand_graph_141D2322_0B7C_4E79_BBE6_1B4ED64C475APKvjbRf,
+                            ___vfx_script_wand_graph_141D2322_0B7C_4E79_BBE6_1B4ED64C475A,
+                            ___vfx_script_wand_graph_60FD312B_BD15_40F5_A712_1FAA290862F8,
+                            ___vfx_script_wand_graph_72931B8F_2F95_4BB5_9FE6_1EB0C3BAC773,
+                            ___vfx_script_wand_graph_7EA008FB_5C48_4CE5_98F1_2F09F9A5CD68,
+                            ___vfx_script_wand_graph_871F2BCC_D47F_4C4B_A756_367C9E3B1F1F,
+                            ___vfx_script_wand_graph_885370CA_9FEE_462C_9EC0_023D3C77D5FA,
+                            ___vfx_script_wand_graph_F66D2FC7_9DFA_45F7_BDD1_184FB5A9E179,
+                            ___vfx_script_wand_particleInit_0,
+                            ___vfx_script_wand_particleInit_40,
+                            ___vfx_script_wand_particleUpdate_1,
+                            ___vfx_script_wand_particleUpdate_28,
+                            ___vfx_script_wand_particleUpdate_35 ]
+    objc-classes:         [ VIUIVisualIntelligenceViewCoordinator,
+                            VIUVisualIntelligenceOmnibar,
+                            VIUVisualIntelligenceView,
+                            _TtC20VisualIntelligenceUI20OmnibarContainerView,
+                            _TtC20VisualIntelligenceUI22SheetTrackingAssistant,
+                            _TtC20VisualIntelligenceUI26SecureNavigationController,
+                            _TtCV20VisualIntelligenceUI11DrillInHost11Coordinator,
+                            _TtCV20VisualIntelligenceUI14SearchCardView11Coordinator,
+                            _TtCV20VisualIntelligenceUI15OverlayTextView11Coordinator,
+                            _TtCV20VisualIntelligenceUI21FocusSelectionGesture11Coordinator,
+                            _TtCV20VisualIntelligenceUI23EventEditViewController11Coordinator,
+                            _TtCV20VisualIntelligenceUI32SystemMinimumLayoutMarginsReader29MarginsTrackingViewController ]
+...
