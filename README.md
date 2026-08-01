@@ -1,5 +1,5 @@
 # iOS-SDKs
-These are iOS SDKs for [theos](https://github.com/theos/theos). To use them, clone this repo and copy them to ``$THEOS/sdks``.
+These are iOS SDKs for [Theos](https://github.com/theos/theos). To use them, clone this repo and copy them to ``$THEOS/sdks``.
 
 ## Credits
 - iOS 16.5 SDK - [theos](https://github.com/theos/sdks)
